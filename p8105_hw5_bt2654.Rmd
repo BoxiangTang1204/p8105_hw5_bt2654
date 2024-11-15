@@ -74,11 +74,15 @@ ggplot(data, aes(x = GroupSize,
 ```
 
 
+![](p8105_hw5_bt2654_files/figure-gfm/problem1_plot1.png)
+
+
 ### Step 4: Analysis and Commentary
 
 * As shown in the plot, the probability of at least two people sharing a birthday increases as the group size grows. This phenomenon is commonly known as the "birthday paradox." Surprisingly, even with a group size as small as 23, the probability exceeds 50%, which is counterintuitive. This result highlights how seemingly improbable events can have higher probabilities in larger groups due to the combinatorial nature of comparisons.
 
 * In this experiment, we assumed that birthdays are uniformly distributed across 365 days, which simplifies the calculation but may not perfectly reflect real-world birthday distributions.
+
 
 
 
@@ -186,9 +190,14 @@ ggplot(power_data,
   )
 ```
 
+
+![](p8105_hw5_bt2654_files/figure-gfm/problem2_plot1.png)
+
+
 **Comments on the first plot:**
 
 The first plot shows the power of the one-sample t-test as a function of the true mean, $\mu$. Power is defined as the probability of correctly rejecting a false null hypothesis. From the plot, we observe that when $\mu = 0$, the power is near zero, as expected, since there is no true effect to detect. As $\mu$ increases, the power of the test also increases, eventually reaching close to 1 (100%) for higher values of $\mu$. This trend aligns with the concept that a larger effect size (in this case, a greater deviation of $\mu$ from 0) enhances the likelihood of detecting a true effect. This plot illustrates the positive association between effect size and test power, demonstrating that with larger true means, the test is more sensitive to correctly identifying a deviation from the null hypothesis.
+
 
 ### Step 6: Calculate and plot the average estimate of mu
 ```{r, message=FALSE,warning=FALSE}
@@ -236,6 +245,9 @@ ggplot(estimate_data,
   )
 
 ```
+
+
+![](p8105_hw5_bt2654_files/figure-gfm/problem2_plot2.png)
 
 
 **Comments on the second plot:**
@@ -400,3 +412,5 @@ ggplot(homicide_results,
 
 ```
 
+
+![](p8105_hw5_bt2654_files/figure-gfm/problem3_plot1.png)
